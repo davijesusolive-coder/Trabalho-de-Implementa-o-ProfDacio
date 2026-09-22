@@ -7,6 +7,7 @@
 
 ## 4.Estrutura de Dados:
 
+´´´´c
 // Estrutura para armazenamento dos Clientes
 typedef struct {
     int id_cliente;
