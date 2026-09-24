@@ -31,6 +31,8 @@
 
 ## 3. Fluxograma da Lógica do Sistema:
 
+<img width="942" height="1024" alt="image" src="https://github.com/user-attachments/assets/ed888d7f-63e6-4a43-8ba8-56afc5c3446a" />
+
 ## 4. Estrutura de Dados:
 
 ```c
