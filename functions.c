@@ -16,7 +16,7 @@ int exibir_menu(void) {
     printf("\n");
     printf("====================================\n");
     printf("\n");
-    printf("            [OPÇÕES]          \n");
+    printf("            [ OPÇÕES ]          \n");
     printf("\n");
     printf("1- Cadastro de Cliente\n");
     printf("2- Registrar Compra\n");
