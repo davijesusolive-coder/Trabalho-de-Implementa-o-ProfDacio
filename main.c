@@ -91,6 +91,7 @@ int main(){
                 
             case -1:
                 printf("\nEntrada invalida!\n");
+                getchar();
                 break;
                 
             default:
