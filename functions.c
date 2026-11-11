@@ -2,6 +2,8 @@
 #include <string.h>
 #include "estruturas.h"
 
+// Função de exibir menu!
+
 int exibir_menu(void) {
     int opcao;
 
@@ -37,3 +39,5 @@ int exibir_menu(void) {
 
     return opcao;
 }
+
+// Função de Cadastro de Cliente
