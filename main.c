@@ -1,26 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 #include "estruturas.h"
+#include "menu.h"
 
 int main(){
     int opcao;
     int quantidadeClientes = 0;
-
     Cliente clientes[100]; // Array para armazenar até 100 clientes
 
 
-    while (1){
-        printf("\n===== ESCOLHA UMA OPCAO =====\n");
-        printf("1- Cadastro de Cliente\n");
-        printf("2- Registrar Compra\n");
-        printf("3- Consultar Cartao fidelidadezn");
-        printf("4- Resgatar beneficio\n");
-        printf("5- Consultar Sorteio\n");
-        printf("6- Listar Clientes\n");
-        printf("0- Sair\n");
-
-        printf("Digite a opcao desejada: ");
-        scanf("%d", &opcao);
+    do{
+        
+        opcao = exibir_menu();
 
         switch (opcao){
             case 1:
@@ -97,9 +88,15 @@ int main(){
             case 0:
                 printf("Encerrando programa.\n");
                 return 0;
+                
+            case -1:
+                printf("\nEntrada invalida!\n");
+                break;
+                
             default:
                 printf("Opcao invalida.\n");
         }
-    }
+    }while (opcao != 0);
+    
     return 0;
 }
