@@ -1,3 +1,6 @@
+#ifndef ESTRUTURAS_H
+#define ESTRURAS_H
+
 // Estrutura para armazenamento dos Clientes
 typedef struct {
     int id_cliente;
@@ -24,3 +27,5 @@ typedef struct {
     char tipo[20]; // "Credito" ou "Debito"
     char data[11]; // formato DD/MM/AAAA
 } Movimentacao;
+
+#endif
