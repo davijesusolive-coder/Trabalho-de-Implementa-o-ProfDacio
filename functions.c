@@ -7,12 +7,15 @@ int exibir_menu(void) {
 
     printf("\n");
     printf("====================================\n");
+    printf("\n");
     printf("            Lojinhas Bahia          \n");
     printf("   Sistema de Cadastro e Filidade   \n");
+    printf("\n");
     printf("====================================\n");
 
     printf("\n");
     printf("====================================\n");
+    printf("\n");
     printf("1- Cadastro de Cliente\n");
     printf("2- Registrar Compra\n");
     printf("3- Consultar Cartao fidelidade\n");
@@ -20,6 +23,7 @@ int exibir_menu(void) {
     printf("5- Consultar Sorteio\n");
     printf("6- Listar Clientes\n");
     printf("0- Sair\n");
+    printf("\n");
     printf("====================================\n");
 
     printf("\nEscolha uma opcao: ");
