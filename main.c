@@ -91,6 +91,7 @@ int main(){
                 
             case -1:
                 printf("\nEntrada invalida!\n");
+                printf("\nPressione Enter para Retornar ao Menu!\n");
                 getchar();
                 break;
                 
