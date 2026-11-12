@@ -40,4 +40,26 @@ int exibir_menu(void) {
     return opcao;
 }
 
+void cadastrar_cliente(struct Cliente clientes[], int *quantidadeClientes) {
+    if (*quantidadeClientes < 100) {
+        clientes[*quantidadeClientes].id_cliente = *quantidadeClientes +1;
+        clientes[*quantidadeClientes].ativo = 1;
+        
+        getchar();
+        
+        printf("\nDigite seu Nome: ");
+        fgets(clientes[*quantidadeClientes].nome, 100, stdin);
+        
+        clientes[*quantidadeClientes].nome[strcspn(clientes[*quantidadeClientes].nome, "\n")] = '\0';
+        
+        (*quantidadeClientes)++;
+        
+        printf("\nCliente Cadastrado com Sucesso!");
+    } else {
+        
+        printf("\nLimite de cadastro atingido!");
+    }
+}
+
+
 // Função de Cadastro de Cliente
