@@ -4,8 +4,10 @@
 #include "fidelidade.h"
 #include "beneficio.h"
 #include "movimentacao.h"
+#include <string.h>
 int main(void)
 {
+    
     // main.c eh o "dono" dos dados: os arrays sao criados aqui e
     // passados por parametro pra cada modulo mexer neles.
     Cliente clientes[MAX_CLIENTES];

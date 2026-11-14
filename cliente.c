@@ -20,7 +20,25 @@ void cadastrarCliente(Cliente clientes[], int *totalClientes, Fidelidade fidelid
  */
 void listarClientes(Cliente clientes[], int totalClientes)
 {
-    printf("[listarClientes] ainda nao implementado.\n");
+    printf("\n===== CLIENTES CADASTRADOS =====\n");
+
+    if (totalClientes == 0) {
+    printf("Nenhum cliente cadastrado.\n");
+    return;
+}
+
+    for (int i = 0; i < totalClientes; i++) {
+
+        if (clientes[i].ativo == 1) {
+
+            printf("\nID: %d\n", clientes[i].id_cliente);
+            printf("Nome: %s\n", clientes[i].nome);
+            printf("CPF: %s\n", clientes[i].cpf);
+            printf("Telefone: %s\n", clientes[i].telefone);
+            printf("Email: %s\n", clientes[i].email);
+
+        }
+    }
 }
 
 /*
@@ -30,6 +48,12 @@ void listarClientes(Cliente clientes[], int totalClientes)
  */
 int buscarClientePorCpf(Cliente clientes[], int totalClientes, const char *cpf)
 {
-    printf("[buscarClientePorCpf] ainda nao implementado.\n");
+    for (int i = 0; i < totalClientes; i++) {
+
+        if (strcmp(clientes[i].cpf, cpf) == 0 && clientes[i].ativo == 1) {
+            return i;
+        }
+
+    }
     return -1;
 }
