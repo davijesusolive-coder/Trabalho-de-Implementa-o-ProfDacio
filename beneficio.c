@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "beneficio.h"
+#include "fidelidde.h"
+#include "movimentacao.h"
+#define PONTOS_MINIMO_SORTEIO 500
 
 /*
  * TODO (Pessoa 3): implementar de verdade.
